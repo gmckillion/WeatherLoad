@@ -1,0 +1,11 @@
+INSERT [dbo].[WeatherLocation]([CityId], [CityISO], [CityName], [State], [CountryISO], [Longitude], [Latitude], [CreatedDateTime], [ModifiedDateTime], [DeletedDateTIme], [IsDeleted])
+VALUES(2147714, null, N'Sydney', NULL, 'AU', 151.207321, 33.867851, GETDATE(), GETDATE(), NULL, 0)
+INSERT [dbo].[WeatherLocation]([CityId], [CityISO], [CityName], [State], [CountryISO], [Longitude], [Latitude], [CreatedDateTime], [ModifiedDateTime], [DeletedDateTIme], [IsDeleted])
+VALUES(2643741, null, N'London', NULL, 'GB', -0.09184, 51.512791, GETDATE(), GETDATE(), NULL, 0)
+INSERT [dbo].[WeatherLocation]([CityId], [CityISO], [CityName], [State], [CountryISO], [Longitude], [Latitude], [CreatedDateTime], [ModifiedDateTime], [DeletedDateTIme], [IsDeleted])
+VALUES(3117735, null, N'Madrid', NULL, 'ES', -3.70256, 40.4165, GETDATE(), GETDATE(), NULL, 0)
+INSERT [dbo].[WeatherLocation]([CityId], [CityISO], [CityName], [State], [CountryISO], [Longitude], [Latitude], [CreatedDateTime], [ModifiedDateTime], [DeletedDateTIme], [IsDeleted])
+VALUES(5128638, null, N'New York', NULL, 'US', -75.499901, 43.000351, GETDATE(), GETDATE(), NULL, 0)
+INSERT [dbo].[WeatherLocation]([CityId], [CityISO], [CityName], [State], [CountryISO], [Longitude], [Latitude], [CreatedDateTime], [ModifiedDateTime], [DeletedDateTIme], [IsDeleted])
+VALUES(6455259, null, N'Paris', NULL, 'FR', 2.35236, 48.856461, GETDATE(), GETDATE(), NULL, 0)
+GO

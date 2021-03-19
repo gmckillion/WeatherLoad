@@ -1,0 +1,26 @@
+CREATE TABLE [dbo].[WeatherReading]
+(
+	[WeatherReadingId] int identity(1,1) not null,
+    [WeatherLoadId] int not null,
+    [WeatherLocationId] int not null,
+    [WeatherDateTime_UTC] DATETIME2,
+    [Temperature_C] numeric(9,2) null,
+    [FeelsLike_C] numeric(9,2) null,
+	[TempMin_C] numeric(9,2) null,
+    [TempMax_C] numeric(9,2) null,
+    [Description] nvarchar(50) null,
+    [Pressure_hPA] smallint null,
+    [Pressure_SeaLevel_hPA] smallint null,
+    [Pressure_GroundLevel_hPA] smallint null,
+    [Humidity_Pct] smallint null,
+    [WindSpeed_MS] smallint null,
+    [WindSpeed_Deg] smallint null,
+    [WindSpeed_Gust] smallint null,
+    [CloudCover_Pct] smallint null,
+    [Rain1h_mm] smallint null,
+    [Rain3h_mm] smallint null,
+    [Snow1h_mm] smallint null,
+    [Snow3h_mm] smallint null,
+	[WeatherIconId] varchar(20) null,
+	CONSTRAINT PK_WeatherReading_WeatherReadingId PRIMARY KEY CLUSTERED (WeatherReadingId)
+)

@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherLoad", "WeatherLoad\WeatherLoad.csproj", "{95E34671-5D6F-4A3F-A03E-528B59F7578F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API.Weather.OpenWeatherMap", "API.Weather.OpenWeatherMap\API.Weather.OpenWeatherMap.csproj", "{D523D5C7-E497-4EB1-ADA1-27B4E7E28554}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DB.Weather", "Data.Weather\DB.Weather.csproj", "{0088234B-F59C-44CD-A45A-ABFFD1506A34}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API.Weather.Model", "API.Weather.Model\API.Weather.Model.csproj", "{E17F08AC-A1EB-475D-9B56-50DC6CF95479}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{008A6902-3222-4483-BD80-9F2FACD41CF2}"
+	ProjectSection(SolutionItems) = preProject
+		README.txt = README.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DB Scripts", "DB Scripts", "{ED19215A-E423-409D-B2D9-3AAC7293634E}"
+	ProjectSection(SolutionItems) = preProject
+		DBScripts\Data\data.WeatherLocation.sql = DBScripts\Data\data.WeatherLocation.sql
+		DBScripts\Data\data.WeatherProvider.sql = DBScripts\Data\data.WeatherProvider.sql
+		DBScripts\Keys\ForeignKeys.Create.sql = DBScripts\Keys\ForeignKeys.Create.sql
+		DBScripts\Index\indexes.sql = DBScripts\Index\indexes.sql
+		DBScripts\Proc\proc.usp_WeatherLoad_Add.sql = DBScripts\Proc\proc.usp_WeatherLoad_Add.sql
+		DBScripts\Proc\proc.usp_WeatherLocation_GetAll.sql = DBScripts\Proc\proc.usp_WeatherLocation_GetAll.sql
+		DBScripts\Proc\proc.usp_WeatherProvider_Get.sql = DBScripts\Proc\proc.usp_WeatherProvider_Get.sql
+		DBScripts\Proc\proc.usp_WeatherReading_Add.sql = DBScripts\Proc\proc.usp_WeatherReading_Add.sql
+		DBScripts\Table\table.WeatherLoad.sql = DBScripts\Table\table.WeatherLoad.sql
+		DBScripts\Table\table.WeatherLocation.sql = DBScripts\Table\table.WeatherLocation.sql
+		DBScripts\Table\table.WeatherProvider.sql = DBScripts\Table\table.WeatherProvider.sql
+		DBScripts\Table\table.WeatherReading.sql = DBScripts\Table\table.WeatherReading.sql
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{95E34671-5D6F-4A3F-A03E-528B59F7578F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95E34671-5D6F-4A3F-A03E-528B59F7578F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95E34671-5D6F-4A3F-A03E-528B59F7578F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95E34671-5D6F-4A3F-A03E-528B59F7578F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D523D5C7-E497-4EB1-ADA1-27B4E7E28554}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D523D5C7-E497-4EB1-ADA1-27B4E7E28554}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D523D5C7-E497-4EB1-ADA1-27B4E7E28554}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D523D5C7-E497-4EB1-ADA1-27B4E7E28554}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0088234B-F59C-44CD-A45A-ABFFD1506A34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0088234B-F59C-44CD-A45A-ABFFD1506A34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0088234B-F59C-44CD-A45A-ABFFD1506A34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0088234B-F59C-44CD-A45A-ABFFD1506A34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E17F08AC-A1EB-475D-9B56-50DC6CF95479}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E17F08AC-A1EB-475D-9B56-50DC6CF95479}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E17F08AC-A1EB-475D-9B56-50DC6CF95479}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E17F08AC-A1EB-475D-9B56-50DC6CF95479}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ED19215A-E423-409D-B2D9-3AAC7293634E} = {008A6902-3222-4483-BD80-9F2FACD41CF2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3E95BA42-06E9-47B0-8A6A-36175C2FBF98}
+	EndGlobalSection
+EndGlobal
